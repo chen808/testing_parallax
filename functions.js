@@ -17,6 +17,29 @@ $(window).scroll(function(){
 
 
 
+	// =====================================
+
+	// if the wScroll number is greater then the .language div container
+	if(wScroll > $('.languages').offset().top - 500){ // <--- top - 500 so that icon can start fading in early
+
+		$('.languages img').each(function(i){
+
+			setTimeout(function(){
+				$('.languages img').eq(i).addClass('is-showing');
+			},150 * (i+1)); // <--- this makes it so each icon fades in one at a time
+			
+		});
+	}
+
+
+
+	// Project Section
+	if(wScroll > $('.container3 h1').offset().top - 500){
+		$('.container3 h1').addClass('animated fadeInDown');
+	}
+
+
+
 
 
 

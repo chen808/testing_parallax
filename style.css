@@ -48,22 +48,99 @@ body{
 
 
 .container2{
-	height: 500px;
-	background-color: purple;
+	height: 800px;
+	background-color: #ff3b3f;
 }
+	.about_me{
+		width: 400px;
+		padding: 10px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.languages{
+		width: 500px;
+		display:inline-block;
+		vertical-align: middle;
+	}
+
+	.languages img{
+		position: relative;
+		margin-bottom: 20px;
+		opacity: 0;
+		transform: translateX(20px); /*this makes icon slide in from right*/
+		transition: all 0.3s ease-in-out;
+	}
+
+	img.is-showing{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+
+.container3 h1{
+	opacity: 0; /*start h1 off 'hidden' at beginning*/
+}
+
+
+/*#testVideo{
+	position: absolute;
+	margin-top: -30px;
+	margin-left: -350px;
+}*/
+
+
+
+
+
+
+
+
 
 .container3{
 	height: 2000px;
 	background-color: green;
 }
 
-.test_container{
-	width: 1500px;
-	position: relative; /** this makes the image an anchor for parallax*/
-	height: 600px;
-	background: url('images/bg_image.jpg');
-	background-size: auto 300px;
-	background-repeat: no-repeat;
-	background-position: center right;
-	background-attachment: fixed; /*this makes the background stay put*/
+#tv_container{
+	background: url('images/monitor.png') no-repeat;
+	width: 600px;
+	height: 500px;
+	position: relative;
 }
+
+#tv_container video{
+	position:absolute;
+	top: -4px;
+	left: 29px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
