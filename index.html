@@ -1,21 +1,24 @@
-<html>
+<html ng-app="myApp">
 <head>
 	<title>Paralax Test 1</title>
 
-	<!-- jQuery cdn -->
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
+		<script src="angular-scroll.js"></script>
+
+	<!-- jQuery CDN -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 
 	<!-- Link to js file -->
 	<script src='functions.js'></script>
 
 	<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 	<!-- Link to style sheet -->
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -23,21 +26,50 @@
 	<!-- Animate CSS -->
 	<link rel="stylesheet" href="animate.css">
 
-
+	<!-- Angular Scroll CDN -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-scroll/1.0.0/angular-scroll.js"></script>
 </head>
 
 
-<body>
-	
-
-		<div class='container'>
-			<div class='logo' ></div>
-			<div class='foreground'></div>
+<body ng-controller="MyCtrl">
+		<!-- Top Nav Bar -->
+		<div id="main_top_logo">
+			<a href="#"><img id='self_logo'></a>
 		</div>
 
+		<nav align='right'>
+		    <ul>
+				<li><a href="#container1" du-smooth-scroll du-scrollspy>Home</a></li>
+				<li><a href="#container2" du-smooth-scroll du-scrollspy>About Me</a></li>
+				<li><a href="#container3" du-smooth-scroll du-scrollspy>Project</a></li>
+		    </ul>
+		    <ul id="contact_links">
+		    	<li><a href="#">Email</a></li>
+		    	<li><a href="#">GitHub</a></li>
+		    	<li><a href="#">LinkedIn</a></li>
+		    </ul>
+		</nav>
+	
+
+		<div class='container' name="container1">
+			<div class='selfLogo'><img src="images/self_logo-01-01.png" width='400' height='90' id="self_logo_hero"></div>
+
+			<!-- Video Container -->
+			<video width='550' height='420' muted controls id="intro_video">
+				<source src="images/movie_test.mp4" type="video/mp4" />
+				Your browser does not support HTML5 video.
+			</video>
 
 
-		<div class='container2'>
+			<!-- <div class='logo' ></div> -->
+			<!-- <div class='foreground'></div> -->
+		</div><!-- end container -->
+
+
+
+
+
+		<div class='container2' name='container2'>
 
 			<div class='about_me col-lg-6'>
 				<h1>Aloha!</h1>
@@ -66,19 +98,11 @@
 				<h4>Bacon ipsum dolor amet pastrami beef ribs pork belly turducken, chuck picanha chicken tail tongue ham hock brisket. Rump hamburger shank pork belly tri-tip turducken, swine pork chop kielbasa prosciutto flank. Meatball meatloaf pork belly, venison spare ribs andouille frankfurter. Drumstick chicken strip steak, jowl filet mignon ball tip spare ribs boudin turkey shoulder pig flank andouille shank. Shank sausage chuck fatback, ham hock pork chop capicola doner.</h4>
 			</div>
 
-		</div>
+		</div><!-- end container2 -->
 
 
 
-
-
-
-
-		<div class='test_container'>
-			
-		</div>
-
-		<div class='container3'>
+		<div class='container3' name='container3'>
 			<h1 align='center'>My Projects</h1>
 			<ul>
 				<li id='tv_container' control>
@@ -91,7 +115,27 @@
 
 				</li>
 			</ul>
-		</div>
+		</div><!-- end container3 -->
+
+
+
+
+		
+		<script>
+			angular.module('myApp', ['duScroll']).
+			  controller('MyCtrl', function($scope, $document){
+			    $scope.toTheTop = function() {
+			      $document.scrollTopAnimated(0, 5000).then(function() {
+			        console && console.log('You just scrolled to the top!');
+			      });
+			    }
+			    var section3 = angular.element(document.getElementById('section-3'));
+			    $scope.toSection3 = function() {
+			      $document.scrollToElementAnimated(section3);
+			    }
+			  }
+			).value('duScrollOffset', 30);
+		</script>
 
 </body>
 </html>

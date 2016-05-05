@@ -3,7 +3,11 @@ $(window).scroll(function(){
 
 	// wScroll wil contain how many pixels have been scrolled from top
 	var wScroll = $(this).scrollTop();
-	//console.log(wScroll);
+	//console.log('The wScroll is: ' + wScroll);
+
+	// check the initial position of the sticky logo
+	var stickyHeaderTop = $('.selfLogo').offset().top;
+	//console.log('printing logo position ' + stickyHeaderTop);
 	
 	// selecting the logo (this will make it 'float' down)
 	$('.logo').css({
@@ -33,6 +37,13 @@ $(window).scroll(function(){
 
 
 
+	if(wScroll > $('.container2').offset().top - 63){
+		document.getElementById("self_logo").src="images/self_logo-01-02.png";
+		$("#self_logo").addClass('animated fadeInDown');
+		// hide the logo in the hero image
+		document.getElementById("self_logo_hero").style.visibility = "hidden";
+	}
+
 	// Project Section
 	if(wScroll > $('.container3 h1').offset().top - 500){
 		$('.container3 h1').addClass('animated fadeInDown');
@@ -43,7 +54,6 @@ $(window).scroll(function(){
 
 
 
-
-
-
 }) // end of (window) function
+
+

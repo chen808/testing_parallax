@@ -1,26 +1,51 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
 *{
 	padding: 0px;
 	margin: 0px;
+	border: none;
+}
+
+h1, h4{
+	font-family: 'Montserrat', sans-serif;
 }
 
 body{
-	background-color: white;
+	background-color: black;
 	height: 2000px;
 }
 
+#main_top_logo{
+	position: fixed;
+	z-index: 5;
+	margin: 10px 20px 20px 30px;
+}
 
 
 .container{
 	width: 1500px;
 	position: relative; /** this makes the image an anchor for parallax*/
 	height: 600px;
-	background-image: url('images/bg_image.jpg');
+	/*background-image: url('images/bg_image.jpg');*/
+	background-color: black;
 	background-size: auto 900px;
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-attachment: fixed; /*this makes the background stay put*/
 	overflow: hidden; /*need this to make sure the foreground image stays a layer underneath*/
 }
+
+.selfLogo{
+	display: inline-block;
+	margin-top: 300px;
+	margin-left: 50px;
+}
+
+.is-fixed{
+	position: fixed;
+	z-index: 2;
+}
+
 
 .logo{
 	height: 120px;
@@ -34,6 +59,13 @@ body{
 	margin-left: -100px;
 }
 
+#intro_video{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 30%;
+
+}
+
 .foreground{
 	width: 200px;
 	height: 300px;
@@ -45,6 +77,50 @@ body{
 	margin-left: -480px;
 	top: 350px;
 }
+
+
+
+    nav {
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: #ff3b3f;
+      background: rgba(0, 0, 0, 0.8);
+      height: 90px;
+    }
+    nav ul{
+    	display: inline-block;
+    }
+    ul#contact_links{
+    	margin-left: 10%;
+    	margin-right: 20px;
+    }
+    nav li, nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: center
+    }
+    nav li, nav a {
+      display: inline-block;
+      margin-top: 10px;
+    }
+    nav a {
+      padding: 20px;
+      color: white;
+      font-size: 1.3em;
+      font-family: 'Montserrat', sans-serif;
+      text-decoration: none;
+    }
+    a:hover {
+      /*background: #ff3b3f;*/
+      color: #ff3b3f;
+      text-decoration: none;
+    }
+
+
 
 
 .container2{
@@ -80,21 +156,6 @@ body{
 .container3 h1{
 	opacity: 0; /*start h1 off 'hidden' at beginning*/
 }
-
-
-/*#testVideo{
-	position: absolute;
-	margin-top: -30px;
-	margin-left: -350px;
-}*/
-
-
-
-
-
-
-
-
 
 .container3{
 	height: 2000px;
