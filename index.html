@@ -3,7 +3,9 @@
 	<title>Paralax Test 1</title>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
-		<script src="angular-scroll.js"></script>
+
+	<!-- Angular Scroll CDN -->
+	<script src="angular-scroll.js"></script>
 
 	<!-- jQuery CDN -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
@@ -26,22 +28,21 @@
 	<!-- Animate CSS -->
 	<link rel="stylesheet" href="animate.css">
 
-	<!-- Angular Scroll CDN -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-scroll/1.0.0/angular-scroll.js"></script>
+	
 </head>
 
 
-<body ng-controller="MyCtrl">
+<body ng-controller="MyCtrl" id="container1">
 		<!-- Top Nav Bar -->
 		<div id="main_top_logo">
-			<a href="#"><img id='self_logo'></a>
+			<a href="#"><img id='self_logo' height="70"></a>
 		</div>
 
 		<nav align='right'>
 		    <ul>
-				<li><a href="#container1" du-smooth-scroll du-scrollspy>Home</a></li>
-				<li><a href="#container2" du-smooth-scroll du-scrollspy>About Me</a></li>
-				<li><a href="#container3" du-smooth-scroll du-scrollspy>Project</a></li>
+				<li><a href="#container1">Home</a></li>
+				<li><a href="#container2">About Me</a></li>
+				<li><a href="#container3">Project</a></li>
 		    </ul>
 		    <ul id="contact_links">
 		    	<li><a href="#">Email</a></li>
@@ -51,7 +52,7 @@
 		</nav>
 	
 
-		<div class='container' name="container1">
+		<div class='container'>
 			<div class='selfLogo'><img src="images/self_logo-01-01.png" width='400' height='90' id="self_logo_hero"></div>
 
 			<!-- Video Container -->
@@ -69,7 +70,7 @@
 
 
 
-		<div class='container2' name='container2'>
+		<div class='container2' name='container2' id="container2">
 
 			<div class='about_me' align="center">
 				<h1 align="center" class='aloha_font'>Aloha!</h1>
@@ -105,13 +106,45 @@
 				</div>
 			</div>
 
+
+
 			<div class='white_line'></div>
+
+
+			<div id='skill_container'>
+				
+
+				<div class='skill' align='center'>
+					<div class='img_row1'>
+						<img src="images/skill-01.jpg" width='100' height:'400'>
+						<img src="images/skill-02.jpg"  width='100' height:'400'>
+						<img src="images/skill-03.jpg"  width='100' height:'400'>
+					</div>
+				</div>
+
+				<div class='skill_text' align='center'>
+					<h3 class='aloha_font'>...to go along<br>with my art background</h3>
+					<h5>Psst! Check out my <a href="https://www.instagram.com/renzochigga/">Instagram</a> for more art stuff!</h5>
+				</div>
+			</div>
+
+
+
 
 		</div><!-- end container2 -->
 
 
 
-		<div class='container3' name='container3'>
+
+
+
+
+
+
+
+
+
+		<div class='container3' name='container3' id="container3">
 			<h1 align='center'>My Projects</h1>
 			<ul>
 				<li id='tv_container' control>

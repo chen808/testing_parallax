@@ -3,7 +3,7 @@ $(window).scroll(function(){
 
 	// wScroll wil contain how many pixels have been scrolled from top
 	var wScroll = $(this).scrollTop();
-	//console.log('The wScroll is: ' + wScroll);
+	console.log('The wScroll is: ' + wScroll);
 
 	// check the initial position of the sticky logo
 	var stickyHeaderTop = $('.selfLogo').offset().top;
@@ -36,18 +36,62 @@ $(window).scroll(function(){
 	}
 
 
+	// Skills Container
+	if(wScroll > $('.skill_text').offset().top - 400){ // <--- top - 500 so that icon can start fading in early
+
+		$('.skill img').each(function(i){
+
+			setTimeout(function(){
+				$('.skill img').eq(i).addClass('is-showing2');
+			},150 * (i+1)); // <--- this makes it so each icon fades in one at a time
+
+			$(".skill_text h5").addClass('animated rubberBand');
+			
+		});
+	}	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	if(wScroll > $('.container2').offset().top - 63){
 		document.getElementById("self_logo").src="images/self_logo-01-02.png";
 		$("#self_logo").addClass('animated fadeInDown');
+		$(".about_me h1").addClass('animated rubberBand');
 		// hide the logo in the hero image
-		document.getElementById("self_logo_hero").style.visibility = "hidden";
+		//document.getElementById("self_logo_hero").style.visibility = "hidden";
 	}
 
+
+
+
+
+
+
+
+
+
 	// Project Section
-	if(wScroll > $('.container3 h1').offset().top - 500){
+	if(wScroll > $('.container3 h1')){
 		$('.container3 h1').addClass('animated fadeInDown');
 	}
+
+
+
 
 
 
