@@ -40,7 +40,7 @@ h3.aloha_font_red{
 
 #main_top_logo{
 	position: fixed;
-	z-index: 5;
+	z-index: 50;
 	margin: 10px 20px 20px 60px;
 }
 
@@ -104,12 +104,12 @@ h3.aloha_font_red{
 
     nav {
       position: fixed;
-      z-index: 1;
+      z-index: 40;
       top: 0;
       left: 0;
       right: 0;
-      background: #ff3b3f;
-      background: rgba(0, 0, 0, 0.8);
+      background: black;
+      /*background: rgba(0, 0, 0, 0.8);*/
       height: 90px;
     }
     nav ul{
@@ -256,7 +256,7 @@ h3.aloha_font_red{
 }
 
 .container3{
-	height: 2000px;
+	height: 1100px;
 	background-color: white;
 	margin-top: -20px;
 }
@@ -311,6 +311,41 @@ video{
 	margin: 0 auto;
 	vertical-align: middle;
 	margin-left: 150px;
+}
+
+
+
+
+
+
+
+#container4{
+	height: 600px;
+	background-color: #ff3b3f;
+	margin-top: -100px;
+	padding-top: 100px;
+}
+
+
+.large-window{
+	height: 300px;
+	width: 300px;
+	padding-top: 100px;
+	margin-left: 100px;
+	/*margin: 0 auto;*/
+	background-image: url('images/my_mug.jpg');
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	border-radius: 70%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.call_to_action{
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 50px;
 }
 
 
