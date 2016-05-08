@@ -52,22 +52,6 @@ $(window).scroll(function(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	if(wScroll > $('.container2').offset().top - 63){
 		document.getElementById("self_logo").src="images/self_logo-01-02.png";
 		$("#self_logo").addClass('animated fadeInDown');
@@ -75,13 +59,6 @@ $(window).scroll(function(){
 		// hide the logo in the hero image
 		//document.getElementById("self_logo_hero").style.visibility = "hidden";
 	}
-
-
-
-
-
-
-
 
 
 

@@ -10,6 +10,7 @@
 	<!-- jQuery CDN -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 
+
 	<!-- Link to js file -->
 	<script src='functions.js'></script>
 
@@ -27,6 +28,16 @@
 
 	<!-- Animate CSS -->
 	<link rel="stylesheet" href="animate.css">
+
+	<script type="text/javascript">
+
+		// the following script disables auto scrol on bootstrap carousel
+		$(document).ready(function(){
+		     $("#myCarousel, #myCarousel2").carousel({
+		         interval : false
+		     });
+		});
+	</script>
 
 	
 </head>
@@ -146,17 +157,118 @@
 
 		<div class='container3' name='container3' id="container3">
 			<h1 align='center'>My Projects</h1>
-			<ul>
-				<li id='tv_container' control>
-					
 
-					<video width='480' height='320' autoplay loop muted>
-						<source src="images/movie_test.mp4" type="video/mp4" />
-					  Your browser does not support HTML5 video.
-					</video>
+			<!-- HashFighter Video Demo Here -->
+			<video width='480' height='320' autoplay loop muted>
+				<source src="images/movie_test.mp4" type="video/mp4" />
+				Your browser does not support HTML5 video.
+			</video>
 
-				</li>
-			</ul>
+
+			<!-- Container to hold 'No Worries' project -->
+			<div id='projectOne_container'>
+				<div class='project_desription'>
+					<h3>"No Worries"</h3>
+					<p>Solely built a web app that allows users to virtually link with a buddy of choice before embarking on an endeavor. App allows initial user to set a "countdown time" that will sound if the user does not disable it in time; and when the alarm sounds, the buddy would receive an alert to check on the user. Conceptually designed the entire site's
+aesthetic and overall appearance.</p>
+				</div>
+
+
+				<!-- Carousel contains screenshots of No Worries -->
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				    <!-- Carousel indicators -->
+				    <ol class="carousel-indicators">
+				        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				        <li data-target="#myCarousel" data-slide-to="1"></li>
+				        <li data-target="#myCarousel" data-slide-to="2"></li>
+				    </ol>   
+				    <!-- Wrapper for carousel items -->
+				    <div class="carousel-inner">
+				        <div class="item active">
+				            <img src="images/slide1.png" alt="First Slide">
+				        </div>
+				        <div class="item">
+				            <img src="images/slide2.png" alt="Second Slide">
+				        </div>
+				        <div class="item">
+				            <img src="images/slide3.png" alt="Third Slide">
+				        </div>
+				    </div>
+				    <!-- Carousel controls -->
+				    <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+				        <span class="glyphicon glyphicon-chevron-left"></span>
+				    </a>
+				    <a class="carousel-control right" href="#myCarousel" data-slide="next">
+				        <span class="glyphicon glyphicon-chevron-right"></span>
+				    </a>
+				</div>
+
+
+			</div><!-- 'No Worries' container -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="myCarousel2" class="carousel slide" data-ride="carousel">
+    <!-- Carousel indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>   
+    <!-- Wrapper for carousel items -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="images/slide1.png" alt="First Slide">
+        </div>
+        <div class="item">
+            <img src="images/slide2.png" alt="Second Slide">
+        </div>
+        <div class="item">
+            <img src="images/slide3.png" alt="Third Slide">
+        </div>
+    </div>
+    <!-- Carousel controls -->
+    <a class="carousel-control left" href="#myCarousel2" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="carousel-control right" href="#myCarousel2" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+			
 		</div><!-- end container3 -->
 
 
@@ -177,6 +289,9 @@
 			    }
 			  }
 			).value('duScrollOffset', 30);
+
+			  // Jssor Slider
+			  jssor_1_slider_init();
 		</script>
 
 </body>
