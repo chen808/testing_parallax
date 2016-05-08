@@ -32,6 +32,12 @@ h3.aloha_font{
 	color: white	;
 }
 
+h3.aloha_font_red{
+	font-family: 'Fredoka One', cursive;
+	font-size: 2em;
+	color: #ff3b3f;
+}
+
 #main_top_logo{
 	position: fixed;
 	z-index: 5;
@@ -251,21 +257,24 @@ h3.aloha_font{
 
 .container3{
 	height: 2000px;
-	background-color: gray;
+	background-color: white;
 	margin-top: -20px;
 }
 
 #projectOne_container{
-	padding: 50px 50px;
-	border: 1px solid black;
+	/*border: 1px solid black;*/
+	margin: 0 auto;
+	padding-top: 40px;
+}
+
+#project_one{
+	width: 420px;
+	padding: 10px;
+	display:inline-block;
 }
 
 .project_desription{
-	display:inline-block;
-	vertical-align: middle;
-	width: 350px;
-	margin-left: 60px;
-	margin-right: 100px;
+	margin: 0 auto;
 }
 
 .carousel{
@@ -278,39 +287,38 @@ h3.aloha_font{
 .bs-example{
 	margin: 20px;
 }
-#myCarousel{
-	height: 350px;
-	width: 600px;
+#myCarousel, #myCarousel2, #myCarousel3 {
+	width: 350px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+
+#hashfighter_container{
+	margin: 0 auto;
+	width: 1000px;
+	padding-bottom: 60px;
+	/*border: 1px solid white;*/
+}
+
+video{
 	display: inline-block;
 	vertical-align: middle;
 }
 
-
-
-
-
-
-
-#myCarousel2{
-	height: 300px;
-	width: 500px;
+.hashfighter_description{
+	display: inline-block;
+	margin: 0 auto;
+	vertical-align: middle;
+	margin-left: 150px;
 }
 
 
 
 
-#tv_container{
-	background: url('images/monitor.png') no-repeat;
-	width: 600px;
-	height: 500px;
-	position: relative;
-}
 
-#tv_container video{
-	position:absolute;
-	top: -4px;
-	left: 29px;
-}
+
+
 
 
 

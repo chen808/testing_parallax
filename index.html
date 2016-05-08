@@ -33,7 +33,7 @@
 
 		// the following script disables auto scrol on bootstrap carousel
 		$(document).ready(function(){
-		     $("#myCarousel, #myCarousel2").carousel({
+		     $("#myCarousel, #myCarousel2, #myCarousel3").carousel({
 		         interval : false
 		     });
 		});
@@ -158,118 +158,171 @@
 		<div class='container3' name='container3' id="container3">
 			<h1 align='center'>My Projects</h1>
 
-			<!-- HashFighter Video Demo Here -->
-			<video width='480' height='320' autoplay loop muted>
-				<source src="images/movie_test.mp4" type="video/mp4" />
-				Your browser does not support HTML5 video.
-			</video>
+			<div id='hashfighter_container'>
+
+				<!-- 'HASHFIGHTER' PROJECT -->
+				<video width='480' height='320' autoplay loop muted>
+					<source src="images/movie_test.mp4" type="video/mp4" />
+					Your browser does not support HTML5 video.
+				</video>
+
+				<div class='hashfighter_description'>
+					<h3 align='center' class='aloha_font_red'>"HashFighters"</h3>
+					<p align='center'>The battle is dicated by community tweets</p>
+					<p align='center'>Built with: MEAN stack</p>
+				</div>
+
+			</div>
 
 
-			<!-- Container to hold 'No Worries' project -->
-			<div id='projectOne_container'>
-				<div class='project_desription'>
-					<h3>"No Worries"</h3>
-					<p>Solely built a web app that allows users to virtually link with a buddy of choice before embarking on an endeavor. App allows initial user to set a "countdown time" that will sound if the user does not disable it in time; and when the alarm sounds, the buddy would receive an alert to check on the user. Conceptually designed the entire site's
-aesthetic and overall appearance.</p>
+
+			<!-- "PROJECT ONE" -->
+			<div id='projectOne_container' align='center'>
+
+				<div id='project_one'>
+					<div class='project_desription'>
+						<h3 align='center' class='aloha_font_red'>"No Worries"</h3>
+						<p align="center">Solely built a web app that allows users to virtually link with a buddy of choice before embarking on an endeavor. App allows initial user to set a "countdown time" that will sound if the user does not disable it in time; and when the alarm sounds, the buddy would receive an alert to check on the user. Conceptually designed the entire site's
+	aesthetic and overall appearance.</p>
+					</div>
+
+
+					<!-- Carousel contains screenshots of No Worries -->
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+					    <!-- Carousel indicators -->
+					    <ol class="carousel-indicators">
+					        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					        <li data-target="#myCarousel" data-slide-to="1"></li>
+					        <li data-target="#myCarousel" data-slide-to="2"></li>
+					    </ol>   
+					    <!-- Wrapper for carousel items -->
+					    <div class="carousel-inner">
+					        <div class="item active">
+					            <img src="images/portfolio_project_image_template-01.jpg" alt="First Slide">
+					        </div>
+					        <div class="item">
+					            <img src="images/portfolio_project_image_template-02.jpg" alt="Second Slide">
+					        </div>
+					        <div class="item">
+					            <img src="images/portfolio_project_image_template-03.jpg" alt="Third Slide">
+					        </div>
+					    </div>
+					    <!-- Carousel controls -->
+					    <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+					        <span class="glyphicon glyphicon-chevron-left"></span>
+					    </a>
+					    <a class="carousel-control right" href="#myCarousel" data-slide="next">
+					        <span class="glyphicon glyphicon-chevron-right"></span>
+					    </a>
+					</div>
+
+					<p align='center'>Built with: MEAN Stack</p>
+
 				</div>
 
 
-				<!-- Carousel contains screenshots of No Worries -->
-				<div id="myCarousel" class="carousel slide" data-ride="carousel">
-				    <!-- Carousel indicators -->
-				    <ol class="carousel-indicators">
-				        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				        <li data-target="#myCarousel" data-slide-to="1"></li>
-				        <li data-target="#myCarousel" data-slide-to="2"></li>
-				    </ol>   
-				    <!-- Wrapper for carousel items -->
-				    <div class="carousel-inner">
-				        <div class="item active">
-				            <img src="images/slide1.png" alt="First Slide">
-				        </div>
-				        <div class="item">
-				            <img src="images/slide2.png" alt="Second Slide">
-				        </div>
-				        <div class="item">
-				            <img src="images/slide3.png" alt="Third Slide">
-				        </div>
-				    </div>
-				    <!-- Carousel controls -->
-				    <a class="carousel-control left" href="#myCarousel" data-slide="prev">
-				        <span class="glyphicon glyphicon-chevron-left"></span>
-				    </a>
-				    <a class="carousel-control right" href="#myCarousel" data-slide="next">
-				        <span class="glyphicon glyphicon-chevron-right"></span>
-				    </a>
+
+				<!-- PROJECT TWO -->
+				<div id='project_one'>
+					<div class='project_desription'>
+						<h3 align='center' class='aloha_font_red'>"Coding Nom Nom"</h3>
+						<p align="center">Solely built a web app that allows users to virtually link with a buddy of choice before embarking on an endeavor. App allows initial user to set a "countdown time" that will sound if the user does not disable it in time; and when the alarm sounds, the buddy would receive an alert to check on the user. Conceptually designed the entire site's
+	aesthetic and overall appearance.</p>
+					</div>
+
+
+					<!-- Carousel contains screenshots of No Worries -->
+					<div id="myCarousel2" class="carousel slide" data-ride="carousel">
+					    <!-- Carousel indicators -->
+					    <ol class="carousel-indicators">
+					        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					        <li data-target="#myCarousel" data-slide-to="1"></li>
+					        <li data-target="#myCarousel" data-slide-to="2"></li>
+					    </ol>   
+					    <!-- Wrapper for carousel items -->
+					    <div class="carousel-inner">
+					        <div class="item active">
+					            <img src="images/portfolio_project_image_template-01.jpg" alt="First Slide">
+					        </div>
+					        <div class="item">
+					            <img src="images/portfolio_project_image_template-02.jpg" alt="Second Slide">
+					        </div>
+					        <div class="item">
+					            <img src="images/portfolio_project_image_template-03.jpg" alt="Third Slide">
+					        </div>
+					    </div>
+					    <!-- Carousel controls -->
+					    <a class="carousel-control left" href="#myCarousel2" data-slide="prev">
+					        <span class="glyphicon glyphicon-chevron-left"></span>
+					    </a>
+					    <a class="carousel-control right" href="#myCarousel2" data-slide="next">
+					        <span class="glyphicon glyphicon-chevron-right"></span>
+					    </a>
+					</div>
+
+					<p align='center'>Built with: MEAN Stack</p>
+
 				</div>
 
 
-			</div><!-- 'No Worries' container -->
 
 
 
+				<!-- PROJECT THREE -->
+				<div id='project_one'>
+					<div class='project_desription'>
+						<h3 align='center' class='aloha_font_red'>"Happy Cupcakes"</h3>
+						<p align="center">Solely built a web app that allows users to virtually link with a buddy of choice before embarking on an endeavor. App allows initial user to set a "countdown time" that will sound if the user does not disable it in time; and when the alarm sounds, the buddy would receive an alert to check on the user. Conceptually designed the entire site's
+	aesthetic and overall appearance.</p>
+					</div>
 
 
+					<!-- Carousel contains screenshots of No Worries -->
+					<div id="myCarousel3" class="carousel slide" data-ride="carousel">
+					    <!-- Carousel indicators -->
+					    <ol class="carousel-indicators">
+					        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					        <li data-target="#myCarousel" data-slide-to="1"></li>
+					        <li data-target="#myCarousel" data-slide-to="2"></li>
+					    </ol>   
+					    <!-- Wrapper for carousel items -->
+					    <div class="carousel-inner">
+					        <div class="item active">
+					            <img src="images/portfolio_project_image_template-01.jpg" alt="First Slide">
+					        </div>
+					        <div class="item">
+					            <img src="images/portfolio_project_image_template-02.jpg" alt="Second Slide">
+					        </div>
+					        <div class="item">
+					            <img src="images/portfolio_project_image_template-03.jpg" alt="Third Slide">
+					        </div>
+					    </div>
+					    <!-- Carousel controls -->
+					    <a class="carousel-control left" href="#myCarousel3" data-slide="prev">
+					        <span class="glyphicon glyphicon-chevron-left"></span>
+					    </a>
+					    <a class="carousel-control right" href="#myCarousel3" data-slide="next">
+					        <span class="glyphicon glyphicon-chevron-right"></span>
+					    </a>
+					</div>
 
+					<p align='center'>Built with: MEAN Stack</p>
 
+				</div>
 
+			</div><!-- projectOne_container -->
 
-
-
-
-
-<div id="myCarousel2" class="carousel slide" data-ride="carousel">
-    <!-- Carousel indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>   
-    <!-- Wrapper for carousel items -->
-    <div class="carousel-inner">
-        <div class="item active">
-            <img src="images/slide1.png" alt="First Slide">
-        </div>
-        <div class="item">
-            <img src="images/slide2.png" alt="Second Slide">
-        </div>
-        <div class="item">
-            <img src="images/slide3.png" alt="Third Slide">
-        </div>
-    </div>
-    <!-- Carousel controls -->
-    <a class="carousel-control left" href="#myCarousel2" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-    </a>
-    <a class="carousel-control right" href="#myCarousel2" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-    </a>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-			
-
-
-
-
-
-
-
-
-
-
-
-			
 		</div><!-- end container3 -->
+
+
+
+
+
+
+
+
+
+		
 
 
 
