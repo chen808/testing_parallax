@@ -251,7 +251,8 @@ h3.aloha_font{
 
 .container3{
 	height: 2000px;
-	background-color: green;
+	background-color: white;
+	margin-top: -20px;
 }
 
 #tv_container{
