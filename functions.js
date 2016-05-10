@@ -67,14 +67,20 @@ $(window).scroll(function(){
 		$('.container3 h1').addClass('animated fadeInDown');
 	}
 
-
-
-
-
-
-
-
-
 }) // end of (window) function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

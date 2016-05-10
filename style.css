@@ -127,10 +127,10 @@ h3.aloha_font_red{
     }
     nav li, nav a {
       display: inline-block;
-      margin-top: 10px;
+      margin-top: 5px;
     }
     nav a {
-      padding: 20px;
+      padding: 10px;
       color: white;
       font-size: 1.3em;
       font-family: 'Montserrat', sans-serif;
@@ -140,6 +140,10 @@ h3.aloha_font_red{
       /*background: #ff3b3f;*/
       color: #ff3b3f;
       text-decoration: none;
+      transform: scale(1.1);
+    }
+    .jump_link{
+    	margin-right: 11%;
     }
 
 
@@ -328,13 +332,13 @@ video{
 
 
 .large-window{
-	height: 300px;
-	width: 300px;
-	padding-top: 100px;
+	height: 250px;
+	width: 250px;
+	margin-top: 130px;
 	margin-left: 100px;
 	/*margin: 0 auto;*/
 	background-image: url('images/my_mug.jpg');
-	background-position: left bottom;
+	background-position: left center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	border-radius: 70%;
@@ -345,7 +349,8 @@ video{
 .call_to_action{
 	display: inline-block;
 	vertical-align: top;
-	margin-left: 50px;
+	margin-top: 80px;
+	margin-left: 65px;
 }
 
 
