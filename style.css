@@ -7,7 +7,7 @@
 	border: none;
 }
 
-h1, h4{
+h1, h4, p{
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -146,6 +146,9 @@ h3.aloha_font_red{
     	margin-right: 11%;
     }
 
+h5 a:hover{
+	color: gray;
+}
 
 
 
@@ -260,7 +263,7 @@ h3.aloha_font_red{
 }
 
 .container3{
-	height: 1100px;
+	height: 1300px;
 	background-color: white;
 	margin-top: -20px;
 }
@@ -275,6 +278,7 @@ h3.aloha_font_red{
 	width: 420px;
 	padding: 10px;
 	display:inline-block;
+	vertical-align: top;
 }
 
 .project_desription{
@@ -300,21 +304,18 @@ h3.aloha_font_red{
 
 #hashfighter_container{
 	margin: 0 auto;
-	width: 1000px;
-	padding-bottom: 60px;
-	/*border: 1px solid white;*/
+	width: 900px;
+	/*border: 1px solid green;*/
+	padding-top: 50px;
 }
 
-video{
-	display: inline-block;
-	vertical-align: middle;
+#hashfighter_container video{
+	width: 900px;
+	margin: 0 auto;
 }
 
 .hashfighter_description{
-	display: inline-block;
 	margin: 0 auto;
-	vertical-align: middle;
-	margin-left: 150px;
 }
 
 

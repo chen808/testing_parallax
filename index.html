@@ -26,6 +26,9 @@
 	<!-- Link to style sheet -->
 	<link rel="stylesheet" type="text/css" href="style.css">
 
+	<!-- Link to medium size css -->
+	<link rel="stylesheet" media="(max-width: 480px)" href="style_480.css" />
+
 	<!-- Animate CSS -->
 	<link rel="stylesheet" href="animate.css">
 
@@ -38,6 +41,8 @@
 		     });
 		});
 	</script>
+
+
 
 	
 </head>
@@ -93,7 +98,7 @@
 
 			<div id='language_container'>
 				<div class='languages_text' align='center'>
-					<h3 class='aloha_font'>Check out the skills I've<br>learned from Coding Dojo</h3>
+					<h3 class='aloha_font'>Check out the skills I've<br>learned from Coding Dojo...</h3>
 				</div>
 
 				<div class='languages' align='center'>
@@ -135,7 +140,7 @@
 
 				<div class='skill_text' align='center'>
 					<h3 class='aloha_font'>...to go along<br>with my art background</h3>
-					<h5>Psst! Check out my <a href="https://www.instagram.com/renzochigga/">Instagram</a> for more art stuff!</h5>
+					<h4>Psst! Check out my <a href="https://www.instagram.com/renzochigga/">Instagram</a><br>for more art stuff!</h4>
 				</div>
 			</div>
 
@@ -162,14 +167,14 @@
 
 				<!-- 'HASHFIGHTER' PROJECT -->
 				<video width='480' height='320' autoplay loop muted>
-					<source src="images/movie_test.mp4" type="video/mp4" />
+					<source src="images/hashfighter_demo.mp4" type="video/mp4"  />
 					Your browser does not support HTML5 video.
 				</video>
 
 				<div class='hashfighter_description'>
 					<h3 align='center' class='aloha_font_red'>"HashFighters"</h3>
-					<p align='center'>The battle is dicated by community tweets</p>
-					<p align='center'>Built with: MEAN stack</p>
+					<p align='center'>Battles are dicated by twitter hashtags. The first to 100 points wins the battle.</p>
+					<p align='center'>Built with: MEAN stack, Twitter Api, Adobe Illustrator, Adobe PhotoShop</p>
 				</div>
 
 			</div>
@@ -182,8 +187,7 @@
 				<div id='project_one'>
 					<div class='project_desription'>
 						<h3 align='center' class='aloha_font_red'>"No Worries"</h3>
-						<p align="center">Solely built a web app that allows users to virtually link with a buddy of choice before embarking on an endeavor. App allows initial user to set a "countdown time" that will sound if the user does not disable it in time; and when the alarm sounds, the buddy would receive an alert to check on the user. Conceptually designed the entire site's
-	aesthetic and overall appearance.</p>
+						<p align="center">User is able to set a completion time for certain events as well as setting up a emergency contact. If User does not check in within scheduled time, text and email will be sent to the contact.</p>
 					</div>
 
 
@@ -216,7 +220,7 @@
 					    </a>
 					</div>
 
-					<p align='center'>Built with: MEAN Stack</p>
+					<p align='center'>Built with: Ruby, Rails, Adobe Illustrator, Twilio Api, ActionMailer</p>
 
 				</div>
 
@@ -226,8 +230,7 @@
 				<div id='project_one'>
 					<div class='project_desription'>
 						<h3 align='center' class='aloha_font_red'>"Coding Nom Nom"</h3>
-						<p align="center">Solely built a web app that allows users to virtually link with a buddy of choice before embarking on an endeavor. App allows initial user to set a "countdown time" that will sound if the user does not disable it in time; and when the alarm sounds, the buddy would receive an alert to check on the user. Conceptually designed the entire site's
-	aesthetic and overall appearance.</p>
+						<p align="center">User is encouraged to right short concise recipe-like code in order to demonstrate a particular programming issue.</p>
 					</div>
 
 
@@ -257,15 +260,9 @@
 					    </a>
 					</div>
 
-					<p align='center'>Built with: MEAN Stack</p>
+					<p align='center'>Built with: Built with: Ruby, Rails, Adobe Illustrator</p>
 
 				</div>
-
-
-
-
-
-				
 
 			</div><!-- projectOne_container -->
 
@@ -280,40 +277,11 @@
 				<h3 align='center' class='aloha_font'>Thank you for your time!</h3>
 			</div>
 		
+			<h6 align='center'>&copy Copyright 2016 Designed by David Chen in California</h6>
 		</div>
 
 
 
-
-
-
-
-
-
-
-
-
-		
-		<script>
-			angular.module('myApp', ['duScroll']).
-			  controller('MyCtrl', function($scope, $document){
-			    $scope.toTheTop = function() {
-			      $document.scrollTopAnimated(0, 5000).then(function() {
-			        console && console.log('You just scrolled to the top!');
-			      });
-			    }
-			    var section3 = angular.element(document.getElementById('section-3'));
-			    $scope.toSection3 = function() {
-			      $document.scrollToElementAnimated(section3);
-			    }
-			  }
-			).value('duScrollOffset', 30);
-
-			  // Jssor Slider
-			  jssor_1_slider_init();
-
-
-		</script>
 
 </body>
 </html>
