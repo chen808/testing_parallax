@@ -40,6 +40,25 @@
 		         interval : false
 		     });
 		});
+
+		var nodemailer = require('nodemailer');
+
+		var router = express.Router();
+		app.use('/sayHello', router);
+		router.post('/', handleSayHello); // handle the route at yourdomain.com/sayHello
+
+		function handleSayHello(req, res) {
+		    // Not the movie transporter!
+		    var transporter = nodemailer.createTransport({
+		        service: 'Gmail',
+		        auth: {
+		            user: 'example@gmail.com', // Your email id
+		            pass: 'password' // Your password
+		        }
+		    });
+		}
+
+
 	</script>
 
 
@@ -51,7 +70,7 @@
 <body ng-controller="MyCtrl" id="container1">
 		<!-- Top Nav Bar -->
 		<div id="main_top_logo">
-			<a href="#"><img id='self_logo' height="70"></a>
+			<a href="#"><img id='self_logo' height="70" ></a>
 		</div>
 
 		<nav align='right'>
@@ -68,18 +87,13 @@
 		</nav>
 	
 
-		<div class='container'>
+		<div class='container' align='center'>
 			<div class='selfLogo'><img src="images/logo-01.svg" width='400' height='90' id="self_logo_hero"></div>
 
-			<!-- Video Container -->
-			<video width='550' height='320' muted controls id="intro_video">
-				<source src="images/movie_test.mp4" type="video/mp4" />
-				Your browser does not support HTML5 video.
-			</video>
 
 
 			<!-- <div class='logo' ></div> -->
-			<!-- <div class='foreground'></div> -->
+			<div class='foreground'></div>
 		</div><!-- end container -->
 
 
@@ -161,7 +175,8 @@
 
 
 		<div class='container3' name='container3' id="container3">
-			<h1 align='center'>My Projects</h1>
+
+			<h2 align='center' class='aloha_font_red'>Projects</h2>
 
 			<div id='hashfighter_container'>
 
@@ -271,10 +286,15 @@
 
 
 		<div id='container4'>
-			<div class='large-window'></div>
+			<!-- <div class='large-window'></div> -->
 
 			<div class='call_to_action'>
-				<h3 align='center' class='aloha_font'>Thank you for your time!</h3>
+				<h2 align='center' class='aloha_font'>Contact.</h2>
+				<ul align='center' id='bottom_contact'>
+					<li><a href="#"><img src="images/contact_icons-01_mail.png" width='50' height='50'>Shoot me a email</a></li>
+					<li><a href="#"><img src="images/contact_icons-03_linkedin.png" width='50' height='50'>Check out my LinkedIn</a></li>
+					<li><a href="#"><img src="images/contact_icons-04_instagram.png" width='50' height='50'>Follow me on Instagram</a></li>
+				</ul>
 			</div>
 		
 			<h6 align='center'>&copy Copyright 2016 Designed by David Chen in California</h6>

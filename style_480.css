@@ -104,7 +104,7 @@ video#intro_video{
 .foreground{
 	width: 200px;
 	height: 300px;
-	background: url('images/foreground_image.png');
+	/*background: url('images/jumbo_image.jpg');*/
 	background-repeat: no-repeat;
 	background-position: right bottom;
 	position: absolute;

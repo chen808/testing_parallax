@@ -32,6 +32,12 @@ h3.aloha_font{
 	color: white	;
 }
 
+h2.aloha_font_red{
+	font-family: 'Fredoka One', cursive;
+	font-size: 5em;
+	color: #ff3b3f;
+}
+
 h3.aloha_font_red{
 	font-family: 'Fredoka One', cursive;
 	font-size: 2em;
@@ -46,10 +52,10 @@ h3.aloha_font_red{
 
 
 .container{
-	width: 1500px;
+	width: 100%;
 	position: relative; /** this makes the image an anchor for parallax*/
 	height: 600px;
-	/*background-image: url('images/bg_image.jpg');*/
+	background-image: url('images/bg_image.jpg');
 	background-color: black;
 	background-size: auto 900px;
 	background-repeat: no-repeat;
@@ -61,7 +67,8 @@ h3.aloha_font_red{
 .selfLogo{
 	display: inline-block;
 	margin-top: 300px;
-	margin-left: 50px;
+	border: 1px solid white;
+	padding: 20px;
 }
 
 .is-fixed{
@@ -91,7 +98,7 @@ h3.aloha_font_red{
 .foreground{
 	width: 200px;
 	height: 300px;
-	background: url('images/foreground_image.png');
+	/*background: url('images/foreground_image.png');*/
 	background-repeat: no-repeat;
 	background-position: right bottom;
 	position: absolute;
@@ -266,6 +273,7 @@ h5 a:hover{
 	height: 1300px;
 	background-color: white;
 	margin-top: -20px;
+	padding-top: 30px;
 }
 
 #projectOne_container{
@@ -335,7 +343,7 @@ h5 a:hover{
 .large-window{
 	height: 250px;
 	width: 250px;
-	margin-top: 130px;
+/*	margin-top: 100px;*/
 	margin-left: 100px;
 	/*margin: 0 auto;*/
 	background-image: url('images/my_mug.jpg');
@@ -347,11 +355,38 @@ h5 a:hover{
 	vertical-align: top;
 }
 
-.call_to_action{
-	display: inline-block;
-	vertical-align: top;
-	margin-top: 80px;
-	margin-left: 65px;
+.call_to_action h2{
+	margin-bottom: 40px;	
+}
+
+#container4{
+	height: 700px;
+}
+
+#bottom_contact{
+	height: 400px;
+	width: 600px;
+	/*border: 1px solid white;*/
+	margin: 0 auto;
+}
+
+#bottom_contact ul{
+	margin: 0 auto;
+}
+
+#bottom_contact li{
+	font-size: 2.0em;
+	padding: 20px;
+	/*border: 1px solid black;*/
+	width: 500px;
+	list-style-type: none;
+	margin: 0 auto;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#bottom_contact img{
+	margin-right: 20px;
+	margin-top: -5px;
 }
 
 
