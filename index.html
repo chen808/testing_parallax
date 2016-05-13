@@ -4,12 +4,8 @@
 
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
 
-	<!-- Angular Scroll CDN -->
-	<script src="angular-scroll.js"></script>
-
 	<!-- jQuery CDN -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-
 
 	<!-- Link to js file -->
 	<script src='functions.js'></script>
@@ -27,7 +23,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 
 	<!-- Link to medium size css -->
-	<link rel="stylesheet" media="(max-width: 480px)" href="style_480.css" />
+	<link rel="stylesheet" media="(max-width: 480px)" href="style_480.css" /><!-- If screen size is less then 480px -->
 
 	<!-- Animate CSS -->
 	<link rel="stylesheet" href="animate.css">
@@ -41,8 +37,6 @@
 		     });
 		});
 
-
-
 	</script>
 
 
@@ -53,28 +47,34 @@
 
 <body ng-controller="MyCtrl" id="container1">
 		<!-- Top Nav Bar -->
-		<div id="main_top_logo">
-			<a href="#"><img id='self_logo' height="70" ></a>
-		</div>
 
-		<nav align='right'>
-		    <ul class='jump_link' align='center'>
-				<li><a href="#container1">Home</a></li>
-				<li><a href="#container2">About Me</a></li>
-				<li><a href="#container3">Project</a></li>
-		    </ul>
-		    <ul id="contact_links">
-		    	<li id='mail'><a href="mailto:chentiki808@gmail.com"><img src="images/contact_icons-01_mail.png" width='50' height='50'></a></li>
-		    	<li><a href="https://github.com/chen808" target="_blank"><img src="images/contact_icons-02_github.png" width='50' height='50'></a></li>
-		    	<li><a href="https://www.linkedin.com/in/davidc808" target="_blank"><img src="images/contact_icons-03_linkedin.png" width='50' height='50'></a></li>
-		    </ul>
+		<nav align='center'>
+			<!-- Nav Bar Logo -->
+			<div id="main_top_logo">
+				<a href="#">
+					<img id='self_logo' height="70" >
+				</a>
+			</div>
+			<!-- Container for contact links -->
+			<div id='top_contact_links'>
+				<!-- Jump Links to part of page -->
+			    <ul class='jump_link'>
+					<li><a href="#container1">Home</a></li>
+					<li><a href="#container2">About Me</a></li>
+					<li><a href="#container3">Project</a></li>
+			    </ul>
+			    <!-- Contact Links -->
+			    <ul id="contact_links">
+			    	<li id='mail'><a href="mailto:chentiki808@gmail.com"><img src="images/contact_icons-01_mail.png" width='40' height='40'></a></li>
+			    	<li><a href="https://github.com/chen808" target="_blank"><img src="images/contact_icons-02_github.png" width='40' height='40'></a></li>
+			    	<li><a href="https://www.linkedin.com/in/davidc808" target="_blank"><img src="images/contact_icons-03_linkedin.png" width='40' height='40'></a></li>
+			    </ul>
+			</div>
 		</nav>
 	
 
 		<div class='container' align='center'>
-			<div class='selfLogo'><img src="images/logo-01.svg" width='400' height='90' id="self_logo_hero"></div>
-
-
+			<div class='selfLogo'></div>
 
 			<!-- <div class='logo' ></div> -->
 			<div class='foreground'></div>
@@ -88,7 +88,7 @@
 
 			<div class='about_me' align="center">
 				<h1 align="center" class='aloha_font'>Aloha!</h1>
-				<h3 class='aloha_font'>I'm David Chen</h3>
+				<h3 class='aloha_font'>I'm David</h3>
 				<h3 class='aloha_font'>A Front-End Developer</h3>
 				<h3 class='aloha_font'>A Graphic Artist</h3>
 				<h3 class='aloha_font'>A Curious Individual</h3>
@@ -172,8 +172,8 @@
 
 				<div class='hashfighter_description'>
 					<h3 align='center' class='aloha_font_red'>"HashFighters"</h3>
-					<p align='center'>Battles are dicated by twitter hashtags. The first to 100 points wins the battle.</p>
-					<p align='center'>Built with: MEAN stack, Twitter Api, Adobe Illustrator, Adobe PhotoShop</p>
+					<p align='center' class='battle_description'>Battles are dictated by Twitter hashtags. The first to 100 points wins the battle. The community offers color commentaries through incoming tweets.</p>
+					<p align='center' class='project_description main_project'>Built with: MEAN stack, Twitter Api, Adobe Illustrator, Adobe PhotoShop</p>
 				</div>
 
 			</div>
@@ -186,9 +186,10 @@
 				<div id='project_one'>
 					<div class='project_desription'>
 						<h3 align='center' class='aloha_font_red'>"No Worries"</h3>
-						<p align="center">User is able to set a completion time for certain events as well as setting up a emergency contact. If User does not check in within scheduled time, text and email will be sent to the contact.</p>
+						<p align="center" class='small_project'>User is able to set a completion time for certain events as well as setting up a emergency contact. If User does not check in within scheduled time, text and email will be sent to the contact.</p>
 					</div>
 
+					<p align='center' class='project_description'>Built with: Ruby, Rails, Adobe Illustrator, Twilio Api, ActionMailer</p>
 
 					<!-- Carousel contains screenshots of No Worries -->
 					<div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -219,7 +220,7 @@
 					    </a>
 					</div>
 
-					<p align='center'>Built with: Ruby, Rails, Adobe Illustrator, Twilio Api, ActionMailer</p>
+					
 
 				</div>
 
@@ -229,9 +230,10 @@
 				<div id='project_one'>
 					<div class='project_desription'>
 						<h3 align='center' class='aloha_font_red'>"Coding Nom Nom"</h3>
-						<p align="center">User is encouraged to right short concise recipe-like code in order to demonstrate a particular programming issue.</p>
+						<p align="center" class='small_project'>User is encouraged to right short concise recipe-like code in order to demonstrate a particular programming issue where it can be shared with other users who encounter the same issue.</p>
 					</div>
 
+					<p align='center' class='project_description'>Built with: Built with: Ruby, Rails, Adobe Illustrator</p>
 
 					<!-- Carousel contains screenshots of No Worries -->
 					<div id="myCarousel2" class="carousel slide" data-ride="carousel">
@@ -259,7 +261,7 @@
 					    </a>
 					</div>
 
-					<p align='center'>Built with: Built with: Ruby, Rails, Adobe Illustrator</p>
+					
 
 				</div>
 
@@ -273,12 +275,13 @@
 			<!-- <div class='large-window'></div> -->
 
 			<div class='call_to_action'>
-				<h2 align='center' class='aloha_font'>Contact.</h2>
+				<h2 align='center' class='aloha_font'>Contact</h2>
 				<ul align='center' id='bottom_contact'>
 					<li><a href="#"><img src="images/contact_icons-01_mail.png" width='50' height='50'>Shoot me a email</a></li>
 					<li><a href="#"><img src="images/contact_icons-03_linkedin.png" width='50' height='50'>Check out my LinkedIn</a></li>
 					<li><a href="#"><img src="images/contact_icons-04_instagram.png" width='50' height='50'>Follow me on Instagram</a></li>
 				</ul>
+				<h2 align='center' class='aloha_font much_mahalo'>Much Mahalo!</h2>
 			</div>
 		
 			<h6 align='center'>&copy Copyright 2016 Designed by David Chen in California</h6>

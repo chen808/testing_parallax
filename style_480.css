@@ -7,7 +7,7 @@
 	border: none;
 }
 
-h1, h4{
+h1, h4, p{
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -16,14 +16,8 @@ a{
 }
 
 body{
-	background-color: gray;
-	width: 480px;
+	background-color: black;
 	height: 2000px;
-}
-
-
-#container1{
-	width: 480px;
 }
 
 .aloha_font{
@@ -36,6 +30,13 @@ h3.aloha_font{
 	font-family: 'Fredoka One', cursive;
 	font-size: 2em;
 	color: white	;
+	letter-spacing: 1px
+}
+
+h2.aloha_font_red{
+	font-family: 'Fredoka One', cursive;
+	font-size: 5em;
+	color: #ff3b3f;
 }
 
 h3.aloha_font_red{
@@ -43,22 +44,16 @@ h3.aloha_font_red{
 	font-size: 2em;
 	color: #ff3b3f;
 }
-
-img#self_logo{
-	display:none;
+.much_mahalo{
+	margin-top: -90px;
+	padding-bottom: 60px;
 }
-
-.selfLogo{
-	margin-top: 35%;
-	margin-left: 28px;
-}
-
 
 .container{
-	width: 480px;
+	width: 100%;
 	position: relative; /** this makes the image an anchor for parallax*/
 	height: 600px;
-	/*background-image: url('images/bg_image.jpg');*/
+	background-image: url('images/bg_image.jpg');
 	background-color: black;
 	background-size: auto 900px;
 	background-repeat: no-repeat;
@@ -67,14 +62,17 @@ img#self_logo{
 	overflow: hidden; /*need this to make sure the foreground image stays a layer underneath*/
 }
 
-#self_logo_hero{
-	width: 300px;
+.selfLogo{
+	background-image: url('images/logo-01.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 300px 200px;
+	margin-top: 300px;
+	border: 1px solid white;
+	padding: 20px;
+	width: 350px;
+	height: 150px;
 }
-
-video#intro_video{
-	visibility: hidden;
-}
-
 
 .is-fixed{
 	position: fixed;
@@ -95,16 +93,15 @@ video#intro_video{
 }
 
 #intro_video{
-	display: hidden;
-/*	display: inline-block;
+	display: inline-block;
 	vertical-align: middle;
-	margin-left: 15%;*/
+	margin-left: 15%;
 }
 
 .foreground{
 	width: 200px;
 	height: 300px;
-	/*background: url('images/jumbo_image.jpg');*/
+	/*background: url('images/foreground_image.png');*/
 	background-repeat: no-repeat;
 	background-position: right bottom;
 	position: absolute;
@@ -115,26 +112,46 @@ video#intro_video{
 
 
 
-    nav {
-      position: fixed;
-      z-index: 40;
-      top: 0;
-      left: 0;
-      right: 0;
-      background: black;
-      /*background: rgba(0, 0, 0, 0.8);*/
-      height: 150px;
-      width: 480px;
-    }
+nav {
+  position: fixed;
+  z-index: 40;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  /*background: rgba(0, 0, 0, 0.8);*/
+  height: 100px;
+}
     nav ul{
     	display: inline-block;
     }
+    nav ul li{
+    	padding: 0px 0px;
+    }
+    #top_contact_links{
+    	float:right;
+    	vertical-align: middle;
+    }
+    .jump_link{
+    	display: none;
+    	margin-right: 100px;
+    }
+    .jump_link li{
+    	padding: 10px 10px 0px 10px;
+    }
+	#main_top_logo{
+		position: fixed;
+		z-index: 50;
+		margin: -3px 0px 0px 60px;
+	}
     ul#contact_links{
-    	margin-right: 38%;
+    	float: right;
+    	margin-right: 60px;
+    	/*margin-left: 25%;*/
     }
     nav li, nav ul {
       list-style: none;
-      margin: 0;
+      margin: 10;
       padding: 0;
       text-align: center
     }
@@ -151,12 +168,15 @@ video#intro_video{
     }
     a:hover {
       /*background: #ff3b3f;*/
-      color: #ff3b3f;
+      color: black;
       text-decoration: none;
       transform: scale(1.1);
     }
-    .jump_link{
-    	margin-right: 30%;
+    nav a:hover {
+      /*background: #ff3b3f;*/
+      color: #ff3b3f;
+      text-decoration: none;
+      transform: scale(1.1);
     }
 
 h5 a:hover{
@@ -190,7 +210,8 @@ h5 a:hover{
 		/*border: 1px solid green;*/
 	}
 	.languages_text{
-		display:inline-block;
+		/*display:inline-block;*/
+		padding-top: 30px;
 		width: 450px;
 		margin: 0 auto;
 		vertical-align: middle;
@@ -198,17 +219,16 @@ h5 a:hover{
 	}
 
 	.languages{
-		width: 450px;
-		padding-top: 80px;
-		display:inline-block;
-		vertical-align: middle;
+		padding-top: 10px;
+		display: block;
 		/*border: 1px solid white;*/
-		margin-left: 94px;
+		margin-left: -5px;
+
 	}
 
 	.languages img{
 /*		position: relative;*/
-		margin-bottom: 20px;
+		margin-bottom: 10px;
 		opacity: 0;
 		transform: translateX(20px); /*this makes icon slide in from right*/
 		transition: all 0.3s ease-in-out;
@@ -276,9 +296,10 @@ h5 a:hover{
 }
 
 .container3{
-	height: 1100px;
+	height: 1300px;
 	background-color: white;
 	margin-top: -20px;
+	padding-top: 30px;
 }
 
 #projectOne_container{
@@ -291,10 +312,13 @@ h5 a:hover{
 	width: 420px;
 	padding: 10px;
 	display:inline-block;
+	vertical-align: top;
+	margin: 0px 30px;
 }
 
 .project_desription{
 	margin: 0 auto;
+	height: 150px;
 }
 
 .carousel{
@@ -312,25 +336,39 @@ h5 a:hover{
 	margin: 0 auto;
 	margin-bottom: 10px;
 }
+p.project_description{
+	color: #ccc;
+	margin-top: 0px;
+	height: 50px;
+	/*border: 1px solid green;*/
+}
+p.small_project{
+	/*border: 1px solid orange;*/
+}
 
+p.main_project{
+	padding-top: 20px;
+}
 
 #hashfighter_container{
 	margin: 0 auto;
-	width: 1000px;
-	padding-bottom: 60px;
-	/*border: 1px solid white;*/
+	width: 900px;
+	/*border: 1px solid green;*/
+	padding-top: 30px;
 }
 
-video{
-	display: inline-block;
-	vertical-align: middle;
+#hashfighter_container video{
+	width: 900px;
+	margin: 0 auto;
 }
 
 .hashfighter_description{
-	display: inline-block;
 	margin: 0 auto;
-	vertical-align: middle;
-	margin-left: 150px;
+}
+
+.battle_description{
+	margin: 0 auto;
+	width: 500px;
 }
 
 
@@ -338,36 +376,62 @@ video{
 
 
 
-
+/* Container 4 */
 #container4{
 	height: 600px;
 	background-color: #ff3b3f;
-	margin-top: -100px;
+	margin-top: -50px;
 	padding-top: 100px;
 }
 
+	.large-window{
+		height: 250px;
+		width: 250px;
+		/* margin-top: 100px;*/
+		margin-left: 100px;
+		/* margin: 0 auto;*/
+		background-image: url('images/my_mug.jpg');
+		background-position: left center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		border-radius: 70%;
+		display: inline-block;
+		vertical-align: top;
+	}
 
-.large-window{
-	height: 250px;
-	width: 250px;
-	margin-top: 130px;
-	margin-left: 100px;
-	/*margin: 0 auto;*/
-	background-image: url('images/my_mug.jpg');
-	background-position: left center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	border-radius: 70%;
-	display: inline-block;
-	vertical-align: top;
-}
+	.call_to_action h2{
+		margin-bottom: 40px;	
+	}
 
-.call_to_action{
-	display: inline-block;
-	vertical-align: top;
-	margin-top: 80px;
-	margin-left: 65px;
-}
+	#container4{
+		height: 800px;
+	}
+
+	#bottom_contact{
+		height: 400px;
+		width: 600px;
+		/*border: 1px solid white;*/
+		margin: 0 auto;
+	}
+
+	#bottom_contact ul{
+		margin: 0 auto;
+	}
+
+	#bottom_contact li{
+		font-size: 2.0em;
+		padding: 20px;
+		/*border: 1px solid black;*/
+		width: 500px;
+		list-style-type: none;
+		margin: 0 auto;
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	#bottom_contact img{
+		margin-right: 20px;
+		margin-top: -5px;
+	}
 
 
 
