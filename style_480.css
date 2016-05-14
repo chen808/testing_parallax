@@ -1,63 +1,62 @@
+/* CSS for screen size 480px */
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 @import url(https://fonts.googleapis.com/css?family=Fredoka+One);
 
-*{
+* {
 	padding: 0px;
 	margin: 0px;
 	border: none;
 }
 
-h1, h4, p{
+h1, h4, p {
 	font-family: 'Montserrat', sans-serif;
 }
 
-a{
+a {
 	color: white;
 }
 
-
-
-video{
+video {
 	width: 80% !important;
 	/*border: 1px solid green;*/
 	margin-left: 40px;
 }
 
-body{
+body {
 	background-color: black;
 	height: 2000px;
 }
 
-.aloha_font{
+.aloha_font {
 	font-family: 'Fredoka One', cursive;
 	font-size: 5em;
 	color: white	;
 }
 
-h3.aloha_font{
+h3.aloha_font {
 	font-family: 'Fredoka One', cursive;
 	font-size: 2em;
 	color: white	;
 	letter-spacing: 1px
 }
 
-h2.aloha_font_red{
+h2.aloha_font_red {
 	font-family: 'Fredoka One', cursive;
 	font-size: 5em;
 	color: #ff3b3f;
 }
 
-h3.aloha_font_red{
+h3.aloha_font_red {
 	font-family: 'Fredoka One', cursive;
 	font-size: 2em;
 	color: #ff3b3f;
 }
-.much_mahalo{
+.much_mahalo {
 	margin-top: -90px;
 	padding-bottom: 60px;
 }
 
-.container{
+.container {
 	width: 100%;
 	position: relative; /** this makes the image an anchor for parallax*/
 	height: 600px;
@@ -70,7 +69,7 @@ h3.aloha_font_red{
 	overflow: hidden; /*need this to make sure the foreground image stays a layer underneath*/
 }
 
-.selfLogo{
+.selfLogo {
 	background-image: url('images/logo-01.svg');
 	background-repeat: no-repeat;
 	background-position: center;
@@ -82,13 +81,12 @@ h3.aloha_font_red{
 	height: 150px;
 }
 
-.is-fixed{
+.is-fixed {
 	position: fixed;
 	z-index: 2;
 }
 
-
-.logo{
+.logo {
 	height: 120px;
 	width: 100%;
 	background: url('images/logo.png');
@@ -100,13 +98,13 @@ h3.aloha_font_red{
 	margin-left: -100px;
 }
 
-#intro_video{
+#intro_video {
 	display: inline-block;
 	vertical-align: middle;
 	margin-left: 15%;
 }
 
-.foreground{
+.foreground {
 	width: 200px;
 	height: 300px;
 	/*background: url('images/foreground_image.png');*/
@@ -118,7 +116,7 @@ h3.aloha_font_red{
 	top: 350px;
 }
 
-.white_line{
+.white_line {
 	width: 200px;
 	padding: 40px 0px;
 	margin: 0 auto;
@@ -136,43 +134,51 @@ nav {
   height: 100px;
   padding-top: 10px;
 }
-    nav ul{
+    nav ul {
     	display: inline-block;
     }
-    nav ul li{
+
+    nav ul li {
     	padding: 0px 0px;
     }
-    #top_contact_links{
+
+    #top_contact_links {
     	float:right;
     	vertical-align: middle;
     }
-    .jump_link{
+    .jump_link {
     	display: none;
     	margin-right: 100px;
     }
-    .jump_link li{
+
+    .jump_link li {
     	padding: 10px 10px 0px 0px;
     }
-	#main_top_logo{
+
+	#main_top_logo {
 		position: fixed;
 		z-index: 50;
 		margin: -3px 0px 0px 60px;
 	}
-    ul#contact_links{
+
+    ul#contact_links {
     	float: right;
     	margin-right: 40px;
     	/*margin-left: 25%;*/
     }
+
     nav li, nav ul {
       list-style: none;
       margin: 10;
       padding: 0;
       text-align: center
     }
+
     nav li, nav a {
       display: inline-block;
       margin-top: 5px;
     }
+
     nav a {
       padding: 5px;
       color: white;
@@ -180,12 +186,14 @@ nav {
       font-family: 'Montserrat', sans-serif;
       text-decoration: none;
     }
+
     a:hover {
       /*background: #ff3b3f;*/
       color: black;
       text-decoration: none;
       transform: scale(1.1);
     }
+
     nav a:hover {
       /*background: #ff3b3f;*/
       color: #ff3b3f;
@@ -193,13 +201,10 @@ nav {
       transform: scale(1.1);
     }
 
-h5 a:hover{
-	color: gray;
-}
 
 
 
-.container2{
+.container2 {
 	height: 1900px;
 	background-color: #ff3b3f;
 }
@@ -212,12 +217,13 @@ h5 a:hover{
 		/*border-bottom: 1px solid white;*/
 	}
 
-	#language_container{
+	#language_container {
 		width: 1000px;
 		margin: 0 auto;
 		/*border: 1px solid green;*/
 	}
-	.languages_text{
+
+	.languages_text {
 		/*display:inline-block;*/
 		padding: 30px;
 		width: 400px;
@@ -226,15 +232,14 @@ h5 a:hover{
 		margin: 0 auto;
 	}
 
-	.languages{
+	.languages {
 		padding-top: 10px;
 		display: block;
 		/*border: 1px solid white;*/
 		margin-left: -20px;
-
 	}
 
-	.languages img{
+	.languages img {
 /*		position: relative;*/
 		margin-bottom: 10px;
 		opacity: 0;
@@ -252,19 +257,19 @@ h5 a:hover{
 
 
 
-	#skill_container{
+	#skill_container {
 		/*width: 1000px;*/
 		/*margin: 0 auto;*/
 		/*border: 1px solid green;*/
 	}
 
-	.skill_text{
+	.skill_text {
 		margin-top: -600px;
 		width: 400px;
 		/*border: 1px solid white;*/
 	}
 
-	.skill{
+	.skill {
 		display: block;
 		/*border: 1px solid white;*/
 		margin-left: -40px;
@@ -272,7 +277,7 @@ h5 a:hover{
 
 	}
 
-	.skill img{
+	.skill img {
 /*		position: relative;*/
 		margin-bottom: 20px;
 		margin-left: 30px;
@@ -281,7 +286,7 @@ h5 a:hover{
 		transition: all 0.3s ease-in-out;
 	}
 
-	img.is-showing2{
+	img.is-showing2 {
 		opacity: 1;
 		transform: translateX(0px);
 	}
@@ -289,34 +294,28 @@ h5 a:hover{
 
 
 
-
-
-
-
-
-
-
-.container3 h1{
+.container3 h1 {
 	opacity: 0; /*start h1 off 'hidden' at beginning*/
 }
 
-.container3{
+.container3 {
 	height: 1800px;
 	background-color: white;
 	margin-top: -20px;
 	padding-top: 30px;
 }
-#hashfighter_video{
+
+#hashfighter_video {
 	background: url('images/hashfighter_demo.mp4')
 }
 
-#projectOne_container{
+#projectOne_container {
 	/*border: 1px solid black;*/
 	margin: 0 auto;
 	padding-top: 40px;
 }
 
-#project_one{
+#project_one {
 	width: 420px;
 	padding: 10px;
 	display:inline-block;
@@ -324,29 +323,32 @@ h5 a:hover{
 	margin: 0px 30px;
 }
 
-.project_desription{
+.project_desription {
 	margin: 0 auto;
 	height: 150px;
 }
 
-.carousel{
+.carousel {
     background: #2f4357;
     margin-top: 20px;
-
 }
-.carousel .item img{
+
+.carousel .item img {
     margin: 0 auto; /* Align slide image horizontally center */
 }
-.bs-example{
+
+.bs-example {
 	margin: 20px;
 }
+
 #myCarousel, #myCarousel2, #myCarousel3 {
 	width: 350px;
 	margin-left: -15px;
 	margin-bottom: 10px;
 	margin-top: -20px;
 }
-p.project_description{
+
+p.project_description {
 	color: #ccc;
 	margin-top: 0px;
 	height: 50px;
@@ -356,48 +358,48 @@ p.project_description{
 	/*border: 1px solid green;*/
 }
 
-p.main_project{
+p.main_project {
 	padding-top: 20px;
 }
 
-.black_line{
+.black_line {
 	border-bottom: 1px solid black;
 	width: 250px;
 	margin: 0 auto;
 	padding-top: 50px;
 }
 
-#hashfighter_container{
+#hashfighter_container {
 	margin: 0 auto;
 	width: 400px;
 	/*border: 1px solid green;*/
 	padding-top: 30px;
 }
 
-
-
-.hashfighter_description{
+.hashfighter_description { 
 	margin: 0 auto;
 	width: 250px;
 }
 
-.battle_description{
+.battle_description {
 	/*margin: 0 auto;*/
 	width: 250px;
 }
-p.small_project{
+
+p.small_project {
 	width: 250px;
 	margin-left: -70px;
 }
 
-#project_one h3{
+#project_one h3 {
 	margin-left: -80px;
 }
-#project_one p.project_description{
+#project_one p.project_description {
 	margin-left: -65px;
 	margin-top: 30px;
 }
-.codenomnom{
+
+.codenomnom {
 	margin-top: 60px;
 }
 
@@ -413,7 +415,7 @@ p.small_project{
 	padding-bottom: 50px;
 }
 
-	.large-window{
+	.large-window {
 		height: 250px;
 		width: 250px;
 		/* margin-top: 100px;*/
@@ -428,30 +430,30 @@ p.small_project{
 		vertical-align: top;
 	}
 
-	.call_to_action h2{
+	.call_to_action h2 {
 		margin-bottom: 40px;	
 	}
 
-	#container4 h6{
+	#container4 h6 {
 		margin-top: -40px;	
 	}
 
-	#container4{
+	#container4 {
 		height: 800px;
 	}
 
-	#bottom_contact{
+	#bottom_contact {
 		height: 400px;
 		width: 600px;
 		/*border: 1px solid white;*/
 		margin: 0 auto;
 	}
 
-	#bottom_contact ul{
+	#bottom_contact ul {
 		margin: 0 auto;
 	}
 
-	#bottom_contact li{
+	#bottom_contact li {
 		font-size: 1.0em;
 		padding: 20px;
 		/*border: 1px solid black;*/
@@ -462,44 +464,10 @@ p.small_project{
 		font-family: 'Montserrat', sans-serif;
 	}
 
-	#bottom_contact img{
+	#bottom_contact img {
 		margin-right: 20px;
 		margin-top: -5px;
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

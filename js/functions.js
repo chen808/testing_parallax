@@ -21,7 +21,7 @@ $(window).scroll(function(){
 
 
 
-	// =====================================
+	// ========================================================================
 
 	// if the wScroll number is greater then the .language div container
 	if(wScroll > $('.languages').offset().top - 500){ // <--- top - 500 so that icon can start fading in early
@@ -51,7 +51,6 @@ $(window).scroll(function(){
 	}	
 
 
-
 	if(wScroll > $('.container2').offset().top - 63){
 		document.getElementById("self_logo").src="images/self_logo-01-02.png";
 		$("#self_logo").addClass('animated fadeInDown');
@@ -61,11 +60,12 @@ $(window).scroll(function(){
 	}
 
 
-
-	// Project Section
-	if(wScroll > $('.container3 h1')){
-		$('.container3 h1').addClass('animated fadeInDown');
+	if(wScroll > $('#container4').offset().top - 63){
+		$(".call_to_action h2#much_mahalo").addClass('animated rubberBand');
 	}
+
+
+
 
 }) // end of (window) function
 

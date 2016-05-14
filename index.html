@@ -8,7 +8,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 
 	<!-- Link to js file -->
-	<script src='functions.js'></script>
+	<script src='js/functions.js'></script>
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -28,6 +28,7 @@
 	<!-- Animate CSS -->
 	<link rel="stylesheet" href="animate.css">
 
+	<!-- Javascript for Carousel -->
 	<script type="text/javascript">
 
 		// the following script disables auto scrol on bootstrap carousel
@@ -39,15 +40,11 @@
 
 	</script>
 
-
-
-	
 </head>
 
-
 <body ng-controller="MyCtrl" id="container1">
-		<!-- Top Nav Bar -->
 
+		<!-- Top Nav Bar ============================================ -->
 		<nav align='center'>
 			<!-- Nav Bar Logo -->
 			<div id="main_top_logo">
@@ -72,7 +69,7 @@
 			</div>
 		</nav>
 	
-
+		<!-- Hero Image -->
 		<div class='container' align='center'>
 			<div class='selfLogo'></div>
 
@@ -83,7 +80,7 @@
 
 
 
-
+		<!-- About Me Section ========================================================= -->
 		<div class='container2' name='container2' id="container2">
 
 			<div class='about_me' align="center">
@@ -93,7 +90,7 @@
 				<h3 class='aloha_font'>A Graphic Artist</h3>
 				<h3 class='aloha_font'>A Curious Individual</h3>
 			</div>
-
+			<!-- Language Icons -->
 			<div id='language_container'>
 				<div class='languages_text' align='center'>
 					<h3 class='aloha_font'>Check out the skills I've<br>learned from Coding Dojo...</h3>
@@ -119,15 +116,12 @@
 					</div>
 				</div>
 			</div>
-
-
-
+			<!-- white line (for design purpose) -->
 			<div class='white_line'></div>
 
-
+			<!-- Skills Section -->
 			<div id='skill_container'>
-				
-
+				<!-- skills images -->
 				<div class='skill' align='center'>
 					<div class='img_row1'>
 						<img src="images/skill-01.jpg" width='100' height:'400'>
@@ -135,57 +129,39 @@
 						<img src="images/skill-03.jpg"  width='100' height:'400'>
 					</div>
 				</div>
-
 				<div class='skill_text' align='center'>
 					<h3 class='aloha_font'>...to go along<br>with my art background</h3>
 					<h4>Psst! Check out my <a href="https://www.instagram.com/renzochigga/">Instagram</a><br>for more art stuff!</h4>
 				</div>
 			</div>
-
-
-
-
 		</div><!-- end container2 -->
 
 
 
-
-
-
-
-
-
-
-
-
+		<!-- Project Section ====================================================== -->
 		<div class='container3' name='container3' id="container3">
 
 			<h2 align='center' class='aloha_font_red'>Projects</h2>
 
 			<div id='hashfighter_container'>
-
-				<!-- 'HASHFIGHTER' PROJECT -->
+				<!-- Hashfighter Project -->
 				<video autoplay loop muted>
 					<source src="images/hashfighter_demo.mp4" type="video/mp4"  />
 					Your browser does not support HTML5 video.
 				</video>
-
-
+				<!-- Hashfighter Description -->
 				<div class='hashfighter_description'>
 					<h3 align='center' class='aloha_font_red'>"HashFighters"</h3>
 					<p align='center' class='battle_description'>Battles are dictated by Twitter hashtags. The first to 100 points wins the battle. The community offers color commentaries through incoming tweets.</p>
 					<p align='center' class='project_description main_project'>Built with: MEAN stack, Twitter Api, Adobe Illustrator, Adobe PhotoShop</p>
 				</div>
-
 			</div>
 
 
 
-			<!-- "PROJECT ONE" -->
 			<div id='projectOne_container' align='center'>
-
+				<!-- No Worries -->
 				<div id='project_one'>
-
 					<!-- Carousel contains screenshots of No Worries -->
 					<div id="myCarousel" class="carousel slide" data-ride="carousel">
 					    <!-- Carousel indicators -->
@@ -221,16 +197,11 @@
 					</div>
 
 					<p align='center' class='project_description'>Built with: Ruby, Rails, Adobe Illustrator, Twilio Api, ActionMailer</p>
-
-
-
 				</div>
 
-				
+				<!-- ============================================= -->
 
-
-
-				<!-- PROJECT TWO -->
+				<!-- Coding Nom Nom -->
 				<div id='project_one'>
 					<!-- Carousel contains screenshots of No Worries -->
 					<div id="myCarousel2" class="carousel slide" data-ride="carousel">
@@ -263,7 +234,7 @@
 
 					<div class='project_desription'>
 						<h3 align='center' class='aloha_font_red'>"Coding Nom Nom"</h3>
-						<p align="center" class='small_project'>User is able to set a completion time for certain events as well as setting up a emergency contact. If User does not check in within scheduled time, text and email will be sent to the contact.</p>
+						<p align="center" class='small_project'>User is encouraged to write clear recipe-like instructions that attempts to solve a particular code issue.</p>
 					</div>
 
 					<p align='center' class='project_description'>Built with: Ruby, Rails, Adobe Illustrator</p>
@@ -274,9 +245,8 @@
 		</div><!-- end container3 -->
 
 
-
+		<!-- Call To Action Section ==================================================================== -->
 		<div id='container4'>
-			<!-- <div class='large-window'></div> -->
 
 			<div class='call_to_action'>
 				<h2 align='center' class='aloha_font'>Contact</h2>
@@ -285,14 +255,11 @@
 					<li><a href="#"><img src="images/contact_icons-03_linkedin.png" width='50' height='50'>Check out my LinkedIn</a></li>
 					<li><a href="#"><img src="images/contact_icons-04_instagram.png" width='50' height='50'>Follow me on Instagram</a></li>
 				</ul>
-				<h2 align='center' class='aloha_font much_mahalo'>Much Mahalo!</h2>
+				<h2 align='center' class='aloha_font much_mahalo' id='much_mahalo'>Much Mahalo!</h2>
 			</div>
 		
 			<h6 align='center'>&copy Copyright 2016 Designed by David Chen in California</h6>
 		</div>
-
-
-
 
 </body>
 </html>
