@@ -15,6 +15,14 @@ a{
 	color: white;
 }
 
+
+
+video{
+	width: 80% !important;
+	/*border: 1px solid green;*/
+	margin-left: 40px;
+}
+
 body{
 	background-color: black;
 	height: 2000px;
@@ -110,7 +118,12 @@ h3.aloha_font_red{
 	top: 350px;
 }
 
-
+.white_line{
+	width: 200px;
+	padding: 40px 0px;
+	margin: 0 auto;
+	border-bottom: 1px solid white;
+}
 
 nav {
   position: fixed;
@@ -121,6 +134,7 @@ nav {
   background: black;
   /*background: rgba(0, 0, 0, 0.8);*/
   height: 100px;
+  padding-top: 10px;
 }
     nav ul{
     	display: inline-block;
@@ -137,7 +151,7 @@ nav {
     	margin-right: 100px;
     }
     .jump_link li{
-    	padding: 10px 10px 0px 10px;
+    	padding: 10px 10px 0px 0px;
     }
 	#main_top_logo{
 		position: fixed;
@@ -146,7 +160,7 @@ nav {
 	}
     ul#contact_links{
     	float: right;
-    	margin-right: 60px;
+    	margin-right: 40px;
     	/*margin-left: 25%;*/
     }
     nav li, nav ul {
@@ -160,7 +174,7 @@ nav {
       margin-top: 5px;
     }
     nav a {
-      padding: 10px;
+      padding: 5px;
       color: white;
       font-size: 1.3em;
       font-family: 'Montserrat', sans-serif;
@@ -186,7 +200,7 @@ h5 a:hover{
 
 
 .container2{
-	height: 1700px;
+	height: 1900px;
 	background-color: #ff3b3f;
 }
 	.about_me{
@@ -195,13 +209,7 @@ h5 a:hover{
 		margin: 0 auto;
 /*		display: inline-block;*/
 		vertical-align: middle;
-		border-bottom: 1px solid white;
-	}
-	.white_line{
-		width: 400px;
-		padding: 40px 0px;
-		margin: 0 auto;
-		border-bottom: 1px solid white;
+		/*border-bottom: 1px solid white;*/
 	}
 
 	#language_container{
@@ -211,18 +219,18 @@ h5 a:hover{
 	}
 	.languages_text{
 		/*display:inline-block;*/
-		padding-top: 30px;
-		width: 450px;
-		margin: 0 auto;
+		padding: 30px;
+		width: 400px;
 		vertical-align: middle;
 		/*border: 1px solid white;*/
+		margin: 0 auto;
 	}
 
 	.languages{
 		padding-top: 10px;
 		display: block;
 		/*border: 1px solid white;*/
-		margin-left: -5px;
+		margin-left: -20px;
 
 	}
 
@@ -245,26 +253,23 @@ h5 a:hover{
 
 
 	#skill_container{
-		width: 1000px;
-		margin: 0 auto;
+		/*width: 1000px;*/
+		/*margin: 0 auto;*/
 		/*border: 1px solid green;*/
 	}
 
 	.skill_text{
-		display:inline-block;
-		width: 450px;
-		margin: 0 auto;
-		vertical-align: middle;
+		margin-top: -600px;
+		width: 400px;
 		/*border: 1px solid white;*/
 	}
 
 	.skill{
-		width: 450px;
-		padding-top: 100px;
-		display:inline-block;
-		vertical-align: middle;
+		display: block;
 		/*border: 1px solid white;*/
-		margin-left: 94px;
+		margin-left: -40px;
+		margin-top: 150px;
+
 	}
 
 	.skill img{
@@ -296,10 +301,13 @@ h5 a:hover{
 }
 
 .container3{
-	height: 1300px;
+	height: 1800px;
 	background-color: white;
 	margin-top: -20px;
 	padding-top: 30px;
+}
+#hashfighter_video{
+	background: url('images/hashfighter_demo.mp4')
 }
 
 #projectOne_container{
@@ -324,6 +332,7 @@ h5 a:hover{
 .carousel{
     background: #2f4357;
     margin-top: 20px;
+
 }
 .carousel .item img{
     margin: 0 auto; /* Align slide image horizontally center */
@@ -333,55 +342,75 @@ h5 a:hover{
 }
 #myCarousel, #myCarousel2, #myCarousel3 {
 	width: 350px;
-	margin: 0 auto;
+	margin-left: -15px;
 	margin-bottom: 10px;
+	margin-top: -20px;
 }
 p.project_description{
 	color: #ccc;
 	margin-top: 0px;
 	height: 50px;
+	width: 200px;
+	margin-left: 25px;
+	margin-bottom: 60px;
 	/*border: 1px solid green;*/
-}
-p.small_project{
-	/*border: 1px solid orange;*/
 }
 
 p.main_project{
 	padding-top: 20px;
 }
 
+.black_line{
+	border-bottom: 1px solid black;
+	width: 250px;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+
 #hashfighter_container{
 	margin: 0 auto;
-	width: 900px;
+	width: 400px;
 	/*border: 1px solid green;*/
 	padding-top: 30px;
 }
 
-#hashfighter_container video{
-	width: 900px;
-	margin: 0 auto;
-}
+
 
 .hashfighter_description{
 	margin: 0 auto;
+	width: 250px;
 }
 
 .battle_description{
-	margin: 0 auto;
-	width: 500px;
+	/*margin: 0 auto;*/
+	width: 250px;
+}
+p.small_project{
+	width: 250px;
+	margin-left: -70px;
 }
 
-
+#project_one h3{
+	margin-left: -80px;
+}
+#project_one p.project_description{
+	margin-left: -65px;
+	margin-top: 30px;
+}
+.codenomnom{
+	margin-top: 60px;
+}
 
 
 
 
 /* Container 4 */
 #container4{
-	height: 600px;
+	height: 650px;
 	background-color: #ff3b3f;
 	margin-top: -50px;
 	padding-top: 100px;
+	padding-bottom: 50px;
 }
 
 	.large-window{
@@ -403,6 +432,10 @@ p.main_project{
 		margin-bottom: 40px;	
 	}
 
+	#container4 h6{
+		margin-top: -40px;	
+	}
+
 	#container4{
 		height: 800px;
 	}
@@ -419,12 +452,13 @@ p.main_project{
 	}
 
 	#bottom_contact li{
-		font-size: 2.0em;
+		font-size: 1.0em;
 		padding: 20px;
 		/*border: 1px solid black;*/
 		width: 500px;
 		list-style-type: none;
-		margin: 0 auto;
+		/*margin: 0 auto;*/
+		margin-left: -50px;
 		font-family: 'Montserrat', sans-serif;
 	}
 
