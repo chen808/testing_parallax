@@ -16,6 +16,8 @@ a {
 	color: white;
 }
 
+
+
 video {
 	width: 80% !important;
 	/*border: 1px solid green;*/
@@ -54,6 +56,7 @@ h3.aloha_font_red {
 .much_mahalo {
 	margin-top: -90px;
 	padding-bottom: 60px;
+	font-size: 4em;
 }
 
 .container {
@@ -75,6 +78,7 @@ h3.aloha_font_red {
 	background-position: center;
 	background-size: 300px 200px;
 	margin-top: 300px;
+	margin-left: 20px;
 	border: 1px solid white;
 	padding: 20px;
 	width: 350px;
@@ -229,14 +233,14 @@ nav {
 		width: 400px;
 		vertical-align: middle;
 		/*border: 1px solid white;*/
-		margin: 0 auto;
+		margin-left: 35px;
 	}
 
 	.languages {
 		padding-top: 10px;
 		display: block;
 		/*border: 1px solid white;*/
-		margin-left: -20px;
+		margin-left: 5px;
 	}
 
 	.languages img {
@@ -261,6 +265,7 @@ nav {
 		/*width: 1000px;*/
 		/*margin: 0 auto;*/
 		/*border: 1px solid green;*/
+		margin-left: 40px;
 	}
 
 	.skill_text {
@@ -311,7 +316,7 @@ nav {
 
 #projectOne_container {
 	/*border: 1px solid black;*/
-	margin: 0 auto;
+	margin-left: 40px;
 	padding-top: 40px;
 }
 
@@ -446,7 +451,7 @@ p.small_project {
 		height: 400px;
 		width: 600px;
 		/*border: 1px solid white;*/
-		margin: 0 auto;
+		margin-left: 30px;
 	}
 
 	#bottom_contact ul {

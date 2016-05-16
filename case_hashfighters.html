@@ -1,0 +1,120 @@
+<html ng-app="myApp">
+<head>
+	<title>Case Study: Hashfighters</title>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
+
+	<!-- jQuery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+	<!-- Link to js file -->
+	<script src='js/functions.js'></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<!-- Link to style sheet -->
+	<link rel="stylesheet" type="text/css" href="style_case_hashfighter.css">
+
+	<!-- Link to medium size css -->
+	<link rel="stylesheet" media="(max-width: 480px)" href="style_480_hashfighter.css" /><!-- If screen size is less then 480px -->
+
+	<!-- Animate CSS -->
+	<link rel="stylesheet" href="animate.css">
+
+	<!-- Javascript for Carousel -->
+	<script type="text/javascript">
+
+		// the following script disables auto scrol on bootstrap carousel
+		$(document).ready(function(){
+		     $("#myCarousel, #myCarousel2, #myCarousel3").carousel({
+		         interval : false
+		     });
+		});
+
+	</script>
+
+</head>
+
+<body ng-controller="MyCtrl" id="container1">
+
+		<!-- Top Nav Bar ============================================ -->
+		<nav align='center'>
+			<!-- Nav Bar Logo -->
+				<a href="index.html" class='mainLogo'>
+					<img src="images/self_logo-01-02.png" width='55' height='70'>
+				</a>
+			<!-- Container for contact links -->
+			<div id='top_contact_links'>
+			    <!-- Contact Links -->
+			    <ul id="contact_links">
+			    	<li id='mail'><a href="mailto:chentiki808@gmail.com"><img src="images/contact_icons-01_mail.png" width='40' height='40'></a></li>
+			    	<li><a href="https://github.com/chen808" target="_blank"><img src="images/contact_icons-02_github.png" width='40' height='40'></a></li>
+			    	<li><a href="https://www.linkedin.com/in/davidc808" target="_blank"><img src="images/contact_icons-03_linkedin.png" width='40' height='40'></a></li>
+			    </ul>
+			</div>
+		</nav>
+	
+		<div id='case_study_container'>
+			<h4 align='center'>Case Study: "Hashfighters"</h4>
+
+			<div id='plans_container_one' align='center'>
+
+				<p align='center'>After the idea for HashFighter was fleshed out, UI mockups were created to understand the blueprint of the project.</p>
+
+				<img src="images/case_study_ui_prototype-01.jpg" width='200' height='200'>
+
+				<img src="images/case_study_ui_prototype-02.jpg" width='200' height='200'>
+			</div>
+
+			<div class='black_line'></div>
+
+
+
+			<div id='plans_container_two'>
+				<img src="images/case_study_ui_prototype 2-01.jpg" width='350' height='600'>
+
+				<p>A prototype was quickly built with Adobe Illustrator to capture the overall design of the project. Old boxing posters were sources of inspiration behind the design.
+				<br><br>
+				One of the initial design issues where how to to give the tweets its respective space. Afterall, the tweets are the 'commentators' and as such keeps the user coming back to website to read the updates.
+				</p>
+			</div>
+
+			<div class='black_line'></div>
+
+			<div id='plans_container_three'>
+				<div class='box_one'>
+					<img src="images/case_study_ui_prototype 3-01.png" width='100' height='100'>
+					<p>Some of the issues encountered were how the incoming tweets where affecting the animation</p>
+				</div>
+
+				<div class='box_two'>
+					<img src="images/case_study_ui_prototype 3-02.png" width='100' height='100'>
+					<p>To solve the issue, the timer to capture the tweets was increased to give the animation time to be triggered.</p>
+				</div>
+
+			</div>
+		</div>
+
+		<div  class='back_link'>
+			<a href="index.html" align='center'>Back to Portfolio</a>
+		</div>
+		
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
