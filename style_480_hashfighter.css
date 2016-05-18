@@ -111,10 +111,10 @@ nav {
 
 
 #case_study_container {
-	height: 3000px;
+	height: 3500px;
 	width: 480px;
 	margin: 0 auto;
-	background-color: #ccc;
+	/*background-color: #ccc;*/
 }
 
 #case_study_container h4 {
@@ -219,7 +219,11 @@ nav {
 		/*border: 1px solid black;*/
 	}
 
-
+	.box_three {
+		width: 160;
+		margin-top: 30px;
+		margin-left: 150px;
+	}
 
 
 

@@ -240,8 +240,6 @@ nav {
 		/*border: 1px solid black;*/
 	}
 
-
-
 	.box_one {
 		width: 250px;
 		display: inline-block;
@@ -281,17 +279,15 @@ nav {
 		/*border: 1px solid black;*/
 	}
 
+	.box_three {
+		margin-top: 30px;
+	}
 
 
-
-
-
-
-
-
-
-
-
+.back_link a {
+	margin-top: -90px;
+	margin-left: -20px;
+}
 
 
 .black_line {
@@ -300,6 +296,7 @@ nav {
 	margin: 0 auto;
 	margin-top: 100px;
 }
+
 
 
 

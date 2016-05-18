@@ -7,6 +7,10 @@
 	<!-- jQuery CDN -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 
+	<!-- jQuery UI CDN -->
+
+	
+
 	<!-- Link to js file -->
 	<script src='js/functions.js'></script>
 
@@ -36,9 +40,17 @@
 		     $("#myCarousel, #myCarousel2, #myCarousel3").carousel({
 		         interval : false
 		     });
+
+
+
+
 		});
 
 	</script>
+
+	<style type="text/css">
+
+	</style>
 
 </head>
 
@@ -257,15 +269,50 @@
 			<div class='call_to_action'>
 				<h2 align='center' class='aloha_font'>Contact</h2>
 				<ul align='center' id='bottom_contact'>
-					<li><a href="#"><img src="images/contact_icons-01_mail.png" width='50' height='50'>Shoot me a email</a></li>
-					<li><a href="#"><img src="images/contact_icons-03_linkedin.png" width='50' height='50'>Check out my LinkedIn</a></li>
-					<li><a href="#"><img src="images/contact_icons-04_instagram.png" width='50' height='50'>Follow me on Instagram</a></li>
+					<li><a href="mailto:chentiki808@gmail.com"><img src="images/contact_icons-01_mail.png" width='50' height='50'>Shoot me a email</a></li>
+					<li><a href="https://www.linkedin.com/in/davidc808" target="_blank"><img src="images/contact_icons-03_linkedin.png" width='50' height='50'>Check out my LinkedIn</a></li>
+					<li><a href="https://www.instagram.com/renzochigga/" target="_blank"><img src="images/contact_icons-04_instagram.png" width='50' height='50'>Follow me on Instagram</a></li>
 				</ul>
 				<h2 align='center' class='aloha_font much_mahalo' id='much_mahalo'>Much Mahalo!</h2>
 			</div>
+
+
+
+
+
+<!-- Button trigger modal -->
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  See my resume son!
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+
+      <div class="modal-body">
+        <div style="text-align: center;">
+			<iframe src="images/David_Chen_Resume copy.pdf" 
+				style="width:500px; height:600px;">
+			</iframe>
+		</div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 		
 			<h6 align='center'>&copy Copyright 2016 Designed by David Chen in California</h6>
 		</div>
+
+
 
 </body>
 </html>
